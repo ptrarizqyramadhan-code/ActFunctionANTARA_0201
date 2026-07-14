@@ -12,3 +12,16 @@ string CekstatusBerparameter(float a){
         return "Tidak Lulus";
     }
 }
+
+int main()
+{
+    float Ujian1, Ujian2;
+
+    cout << "Masukkan nilai Ujian 1 : ";
+    cin >> Ujian1;
+    cout << "Masukkan nilai Ujian 2 : ";
+    cin >> Ujian2;
+
+    cout << "status Kelulusan : "
+     << CekstatusBerparameter(HitungRerataBerparameter(Ujian1, Ujian2));
+}
